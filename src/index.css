@@ -4,17 +4,27 @@ body {
   box-sizing: border-box;
 }
 
+/* Variables */
+
+:root{
+  --primary-black: black;
+
+  --primary-color: #21B6AD;
+
+  --body-bottom-right-gradient: rgba(40,43,59,1);
+  --body-top-left-gradient: rgba(72,84,97,1);
+}
+
 #root, body, html, .app{
   min-height: 100% !important;
 }
 
 body{
   background:
-  linear-gradient(to left top, rgba(40,43,59,1) 0%, rgba(72,84,97,1) 100% /*top-left color*/),
+  linear-gradient(to left top, var(--body-top-left-gradient) 0%, var(--body-bottom-right-gradient) 100% /*top-left color*/),
   linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
