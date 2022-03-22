@@ -3,6 +3,8 @@ import React from "react";
 export default function NavBar() {
 
   const [toggled, setToggled] = React.useState(false);
+  const primaryNav = document.querySelector('.primary-navigation');
+  const navToggle = document.querySelector('.mobile-nav-toggle');
 
   React.useEffect(() => {
 
@@ -17,18 +19,23 @@ export default function NavBar() {
 
   // Handle mobile nav behaviors
   const toggleOpen = () => {
+      const visibility = primaryNav.getAttribute('data-visible');
 
-
+      if(visibility === "false"){
+        primaryNav.setAttribute('data-visible', "true")
+      }else{
+        primaryNav.setAttribute('data-visible', "false")
+      }
   };
 
   return (
     <>
     {/* Aria controls mean this button is controling the "primary-navigation" content */}
-    <button className="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <button className="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" onClick={toggleOpen}>
       <span className="sr-only">Menu</span>
     </button>
       <nav>          
-        <ul id="primary-navigation" className="primary-navigation flex">
+        <ul id="primary-navigation" data-visible="false" className="primary-navigation flex">
           <li className="active">
             <a href="">
               <span aria-hidden="true">00</span>Home
