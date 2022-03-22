@@ -23,8 +23,12 @@ export default function NavBar() {
 
   return (
     <>
+    {/* Aria controls mean this button is controling the "primary-navigation" content */}
+    <button className="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span className="sr-only">Menu</span>
+    </button>
       <nav>          
-        <ul id="primary-nav" className="primary-navigation flex">
+        <ul id="primary-navigation" className="primary-navigation flex">
           <li className="active">
             <a href="">
               <span aria-hidden="true">00</span>Home
