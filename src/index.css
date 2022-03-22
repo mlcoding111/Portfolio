@@ -4,8 +4,8 @@ body {
   box-sizing: border-box;
 }
 
-#root, body, html{
-  min-height: 100%;
+#root, body, html, .app{
+  min-height: 100% !important;
 }
 
 body{
@@ -13,7 +13,6 @@ body{
   linear-gradient(to left top, rgba(40,43,59,1) 0%, rgba(72,84,97,1) 100% /*top-left color*/),
   linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
