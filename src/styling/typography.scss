@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root, body, html, .app{
+    min-height: 100% !important;
+}
+  
+body{
+    background:
+    linear-gradient(to left top, $body-top-left-gradient 0%, $body-bottom-right-gradient 100% /*top-left color*/),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+  
