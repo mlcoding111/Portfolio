@@ -1,0 +1,25 @@
+#primary-nav{
+    height: 120px !important;
+    align-items: center;
+}
+
+.primary-navigation{
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;    
+}
+
+.primary-navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+.primary-navigation a > [aria-hidden="true"]{
+    font-weight: bold;
+    margin-inline-end: .75em;
+}
+
+.logo{
+    margin: 2rem;
+}
