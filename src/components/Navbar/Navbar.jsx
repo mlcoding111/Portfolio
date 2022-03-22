@@ -25,11 +25,6 @@ export default function NavBar() {
     <>
       <nav>          
         <ul id="primary-nav" className="primary-navigation flex">
-        <li className="active">
-            <a href="">
-              <span aria-hidden="true">00</span>Logo
-            </a>
-          </li>
           <li className="active">
             <a href="">
               <span aria-hidden="true">00</span>Home

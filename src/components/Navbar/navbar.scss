@@ -1,13 +1,17 @@
-#primary-nav{
-    height: 120px !important;
-    align-items: center;
-}
 
-.primary-navigation{
-    justify-content: space-between;
+.primary-navigation {
     list-style-type: none;
     padding: 0;
-    margin: 0;    
+    margin: 0;   
+    background: var(--color-nav-bg-unsupported); // if browser do not support backdrop
+}
+
+// if browser support backdrop
+@supports (backdrop-filter: blur(1rem)){
+    .primary-navigation{
+        background: var(--color-nav-bg);
+        backdrop-filter: blur(1rem);
+    }
 }
 
 .primary-navigation a{
@@ -19,6 +23,21 @@
     font-weight: bold;
     margin-inline-end: .75em;
 }
+
+// Media Query
+
+@media (max-width: 35em){
+    .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: calc(min(30vh, 10rem)) 2em !important; // make padding responsive
+        background: var(--color-nav-bg);
+        backdrop-filter: blur(1rem);
+    }
+}
+
 
 .logo{
     margin: 2rem;
