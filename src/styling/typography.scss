@@ -1,12 +1,14 @@
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
     overflow-x: hidden;
 }
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #root, body, html, .app{
@@ -14,12 +16,116 @@ html{
 }
   
 body{
-    background:
-    linear-gradient(to left top, $body-top-left-gradient 0%, $body-bottom-right-gradient 100% /*top-left color*/),
-    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    background: linear-gradient(to left top, var(--body-top-left-gradient) 0%, var(--body-bottom-right-gradient) 100% /*top-left color*/), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
 }
   
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  /* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-darker);
 }
   
+main{
+    padding-block: 2rem;
+    width: calc(min(95%, 70rem));
+    margin-inline: auto;    
+    
+}
+
+h1, h2{
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+h1{
+    font-size: var(--fs-xl) !important;
+}
+
+h2{
+    font-size: var(--fs-600);
+}
+
+h2 svg{
+    position: relative;
+    top: -5px;
+    margin-right: 20px;
+}
+
+#brand-opacity{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Button */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact hr{
+    position: relative;
+    width: 25%;
+    margin: .7rem auto;
+    border: 1px solid var(--primary);
+}
+
+/* BUTTON */
+
+.btn{
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+    padding: .7rem 1rem;
+    font-weight: bold;
+    border: 3px solid var(--primary-darker);
+    font-size: .9rem;
+    margin: 0 .5rem;
+    background: transparent;
+    color: white;
+}
+
+#work-btn{
+    background: transparent;
+}
+
+#work-btn:hover,
+.btn:hover{
+    background: var(--primary);
+    color: white !important;
+    border: solid 3px var(--primary);
+}
+
+#resume-btn{
+    background: var(--primary);
+    color: white;
+    border: 3px solid var(--primary);
+}
+
+.long-text{
+    word-spacing: 1px;
+    color: white;
+}
+
+section{
+    margin: 5rem 0;
+}

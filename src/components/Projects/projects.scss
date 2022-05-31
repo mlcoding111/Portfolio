@@ -1,0 +1,123 @@
+.projects-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.projects-list > * {
+    flex: 1 1 25em;
+}
+
+@media (max-width: 60em){
+    .card{
+        margin: 1rem !important;
+    } 
+
+    #works{
+        padding: 2rem;        
+    }
+}
+
+@media (max-width: 600px){
+    .card-list{
+        font-size: .8rem;
+    }
+    #works{
+        padding: 0rem;        
+    }
+}
+
+@media (max-width: 400px){
+    .card-list{
+        font-size: .7rem;
+    }
+
+    .card{
+        width: 300px;
+    }
+}
+
+
+.card{
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 8px var(--primary);
+    color: white;
+    border-radius: 10px;
+    margin: 1rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 62.5%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.card-body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-inner-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-img{
+    position: relative;
+    height: auto;
+    width: 75%;
+    margin: 1rem 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.card-img:hover{
+    transform: scale(1.02);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-title{
+    padding: 1rem;
+    border-bottom: 1px solid #000000;
+
+}
+
+.card-list{
+    display: flex;
+    list-style: none;
+    justify-content: left;
+}
+
+.card-list > * {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 62.5%, rgba(0, 0, 0, 0.1) 100%);
+    padding: .5rem 1rem;
+    margin: 0 .2rem;    
+}
+
+.card button{
+    position: relative;
+    display: flex;
+    margin: 1rem auto;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: .5rem 1.9rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 62.5%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.btn:hover{
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.btn a{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

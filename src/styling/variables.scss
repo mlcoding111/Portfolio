@@ -1,7 +1,21 @@
 :root{
+    /* Color variables */
+    --primary: #e31b6d;
+    --primary-darker: #a71451;
+    --light: #EEEEEE;
+    --dark: #212121;
     --color-nav-bg: hsl(0 0% 0% / .1);
     --color-nav-bg-unsupported: hsl(0 0% 0% / .5);
+
+    --body-bottom-right-gradient: rgba(40,43,59,1);
+    --body-top-left-gradient: rgb(36, 43, 49);
+
+    /* Font size Variables */
+    --fs-xl: clamp(.9rem, 5vw, 2.2rem);
+    --fs-600: clamp(.6rem, 5vw, 1.9rem);
+    --fs-400: calc(0.75em + 1vmin);
 }
+
 
 $primary-black: black;
   

@@ -1,0 +1,24 @@
+{
+    "projects":[
+        {
+            "title": "DPL",
+            "src": "../assets/projects/dpl.png"
+        },
+        {
+            "title": "LADEKO",
+            "src": "../assets/projects/dpl.png"
+        },
+        {
+            "title": "PGS",
+            "src": "../assets/projects/dpl.png"
+        },
+        {
+            "title": "PLANA",
+            "src": "../assets/projects/dpl.png"
+        },
+        {
+            "title": "MOVIE APP",
+            "src": "../assets/projects/dpl.png"
+        }            
+    ]
+}
