@@ -1,10 +1,7 @@
 import React from "react";
-
 import Header from "../Header/Header.jsx";
-
 import Footer from "../Footer/Footer.jsx";
 import NavBar from "../Navbar/Navbar.jsx";
-
 import SectionHeader from "../Reusable/SectionHeader.jsx";
 import Projects from '../Projects/ProjectsCardsList'
 

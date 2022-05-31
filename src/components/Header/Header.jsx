@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar.jsx'
 import me from '../../assets/me.jpg'
 import * as Scroll from 'react-scroll'
 import { Link } from 'react-scroll'

@@ -19,7 +19,7 @@ export const data = [
         title: "PGS",
         src: require("../../assets/projects/pgs.png"),
         github: "https://github.com/mlcoding111/PGS-GESTION",
-        website: "https://decontamination-pl.ca/",
+        website: "https://github.com/mlcoding111/PGS-GESTION",
         technologies: ['React', 'Scss', 'Css'],
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/mongodb.svg"), require("../../assets/skills/nodejs.svg"), require("../../assets/skills/materialui.svg")]
     },
@@ -27,7 +27,7 @@ export const data = [
         title: "PLAN A",
         src: require("../../assets/projects/plana.png"),
         github: "https://github.com/mlcoding111/Plan-A",
-        website: "https://decontamination-pl.ca/",
+        website: "https://mlcoding111.github.io/Plan-A/",
         technologies: ['React', 'Scss', 'Css'],
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/sass.svg"), require("../../assets/skills/bootstrap.svg")]
     },
