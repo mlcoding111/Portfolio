@@ -11,6 +11,8 @@
     Personal portfolio made with React
     <br />
     <br />
+    <h4>Date published : 2022-05-28 </h4>
+    <br />
     <br />
     <a href="http://mlweb.org" target="_blank">View Demo</a>
   </p>
