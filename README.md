@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="http://mlweb.org">
     <img src="https://user-images.githubusercontent.com/57301242/171293021-fd044fac-898a-44bd-a3bb-16c932fcd38b.png" alt="Logo" >
   </a>
 
