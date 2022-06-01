@@ -5,19 +5,6 @@ export default function ProjectCard({title, src, link, gitlink, technologies, ic
   const handleClick = () =>{
     window.open(gitlink)
   }
-  function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => {
-      images[item.replace("./", "")] = r(item);
-    });
-    return images;
-  }
-  let images = importAll(
-    require.context("../../assets/skills", false, /\.(png|jpe?g|svg)$/)
-  );
-
-  console.log(images)
-  console.log(icons)
 
   return (
     <div className="card">

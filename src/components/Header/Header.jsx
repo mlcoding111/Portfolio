@@ -26,13 +26,15 @@ export default function Header() {
 
         <p className="long-text">
           I’m a Front-End developer passionate about programming since a young
-          age. I have good knowledge about back-end to setup basic database
-          structure using node js and express js.
+          age, always looking to become a better developer and push my skills further.
+          
+          {/* I have good knowledge about back-end to setup basic database
+          structure using node js and express js. */}
         </p>
 
         <div className="hero-btn-wrapper">
         <button id="work-btn" className="btn" ><Link to="works" spy={true} smooth={true} onClick={scrollTo('works')} offset={-100}>Checkout my work!</Link></button>
-          <button id="resume-btn" className="btn" onClick={() => window.open("https://docs.google.com/document/d/1FJnO_tW-DfhVMMY9SW9KY2nLflMWG5iBihob_w-oRWs/edit?usp=sharing", "_blank")}>Resumer</button>
+          <button id="resume-btn" className="btn" onClick={() => window.open("https://docs.google.com/document/d/1FJnO_tW-DfhVMMY9SW9KY2nLflMWG5iBihob_w-oRWs/edit?usp=sharing", "_blank")}>Resume</button>
         </div>
       </div>
     </header>

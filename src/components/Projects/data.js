@@ -1,4 +1,13 @@
 export const data = [
+    
+    {
+        title: "Frist projects",
+        src: require("../../assets/projects/landing.png"),
+        github: "https://github.com/mlcoding111/Personal_Projects",
+        website: "https://mlcoding111.github.io/Personal_Projects/PortFolio/index.html",
+        technologies: ['React', 'Css'],
+        icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/css3.svg"), require("../../assets/skills/javascript.svg")]
+    },
     {
         title: "DPL",
         src: require("../../assets/projects/dpl.png"),
