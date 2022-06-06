@@ -9,6 +9,22 @@ export const data = [
         icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/css3.svg"), require("../../assets/skills/javascript.svg")]
     },
     {
+        title: "MOVIE APP",
+        src: require("../../assets/projects/movie.jpg"),
+        github: "https://github.com/mlcoding111/Movie-app",
+        website: "https://mlcoding111.github.io/modern-movie/",
+        technologies: ['React', 'TypeScript', 'Styled Components'],
+        icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/typescript.svg"), require("../../assets/skills/styledComponents.svg")]
+    },
+    {
+        title: "WORDS BEATER",
+        src: require("../../assets/projects/words.png"),
+        github: "https://github.com/mlcoding111/Words-Beater",
+        website: "https://mlcoding111.github.io/Words-Beater/",
+        technologies: ['React', 'TypeScript', 'Styled Components'],
+        icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/typescript.svg"), require("../../assets/skills/styledComponents.svg")]
+    },  
+    {
         title: "DPL",
         src: require("../../assets/projects/dpl.png"),
         github: "https://github.com/mlcoding111/dpl-rework",
@@ -39,13 +55,5 @@ export const data = [
         website: "https://mlcoding111.github.io/Plan-A/",
         technologies: ['React', 'Scss', 'Css'],
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/sass.svg"), require("../../assets/skills/bootstrap.svg")]
-    },
-    {
-        title: "MOVIE APP",
-        src: require("../../assets/projects/movie.jpg"),
-        github: "https://github.com/mlcoding111/Movie-app",
-        website: "https://mlcoding111.github.io/modern-movie/",
-        technologies: ['React', 'TypeScript', 'Styled Components'],
-        icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/typescript.svg"), require("../../assets/skills/styledComponents.svg")]
-    }    
+    }
 ]
