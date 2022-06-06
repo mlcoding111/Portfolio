@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProjectCard({title, src, link, gitlink, technologies, icons}) {
+export default function ProjectCard({title, src, link, gitlink, technologies, icons, type}) {
   const handleClick = () =>{
     window.open(gitlink)
   }
@@ -10,7 +10,7 @@ export default function ProjectCard({title, src, link, gitlink, technologies, ic
       <div className="card-body">
         <div className="card-title">
           <h2>{title}</h2>
-          <span className="contract-type">Freelance contract</span>
+          <span className="contract-type">{type}</span>
         </div>
         <div className="card-inner-container">
           <img className="card-img" src={src} height="250" alt="work" onClick={ () => window.open(link)}/>
