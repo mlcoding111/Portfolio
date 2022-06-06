@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function ProjectCard({title, src, link, gitlink, technologies, icons}) {
-  console.log(icons)
   const handleClick = () =>{
     window.open(gitlink)
   }

@@ -2,15 +2,22 @@
     display: grid;
     margin-top: 1.5rem;
     gap: 1.5rem;
-    grid-template-columns:  repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding-block: 2rem;
     width: calc(min(95%, 70em));
     margin-inline: auto;
 }
 
+.card:last-child{
+    grid-column: span 2;
+}
+
 @media (max-width: 50em){
     .projects-list{
         grid-template-columns:  repeat(1, 1fr);
+    }
+    .card:last-child{
+        grid-column: span 1;
     }
 
     #works{
