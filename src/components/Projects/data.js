@@ -1,7 +1,7 @@
 export const data = [
     
     {
-        title: "Frist projects",
+        title: "First projects",
         type: "Personal",
         src: require("../../assets/projects/landing.png"),
         github: "https://github.com/mlcoding111/Personal_Projects",
@@ -53,6 +53,15 @@ export const data = [
         website: "https://github.com/mlcoding111/PGS-GESTION",
         technologies: ['React', 'Scss', 'Css'],
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/mongodb.svg"), require("../../assets/skills/nodejs.svg"), require("../../assets/skills/materialui.svg")]
+    },
+    {
+        title: "MAISON",
+        type: "Personal",
+        src: require("../../assets/projects/maison.jpg"),
+        github: "https://github.com/mlcoding111/Maison-OnePager",
+        website: "https://mlcoding111.github.io/Maison-OnePager/",
+        technologies: ['Html', 'Scss', 'Css'],
+        icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/sass.svg")]
     },
     {
         title: "PLAN A",
