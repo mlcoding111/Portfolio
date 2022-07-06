@@ -20,9 +20,13 @@ function importAll(r) {
 const images = importAll(
   require.context("../../assets/skills", false, /\.(png|jpe?g|svg)$/)
 );
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 2},
+  hidden: { opacity: 0, scale: 0}
+}
 const Home = () => {
-  
-    
+   
   return (
     <>
       <div id="top-message">
