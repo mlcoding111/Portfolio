@@ -16,11 +16,11 @@ export default function Header() {
 
   return (
     <header>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: 1000 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{
-          delay: .4,
+          delay: 0.5,
           x: { type: "spring", stiffness: 100 },
           default: { duration: .5 },
         }}
@@ -32,9 +32,9 @@ export default function Header() {
         initial={{ opacity: 0, x: 1000 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{
-          delay: 0.2,
+          delay: 0.5,
           x: { type: "spring", stiffness: 50 },
-          default: { duration: 1 },
+          default: { duration: .5 },
         }}
         viewport={{ once: true }}
         className="hero-description">

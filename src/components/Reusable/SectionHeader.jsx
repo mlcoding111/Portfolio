@@ -1,10 +1,19 @@
 import React from 'react'
+import {  useInView  } from 'framer-motion'
 
 export default function SectionHeader({title}) {
+
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <h2>
+    <h2 ref={ref}>
         <svg
-          width="97"
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
           height="3"
           viewBox="0 0 97 3"
           fill="none"

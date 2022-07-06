@@ -2,8 +2,6 @@ import React from "react";
 import * as Scroll from 'react-scroll';
 import { Link,  animateScroll as scroll } from 'react-scroll'
 
-import { motion } from 'framer-motion'
-
 export default function NavBar() {
   var scroll = Scroll.animateScroll;
   // Handle mobile nav behaviors

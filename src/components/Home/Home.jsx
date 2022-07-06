@@ -5,7 +5,8 @@ import NavBar from "../Navbar/Navbar.jsx";
 import SectionHeader from "../Reusable/SectionHeader.jsx";
 import Projects from '../Projects/ProjectsCardsList'
 
-import { motion } from 'framer-motion'
+
+import { motion, useInView } from 'framer-motion'
 
 import { Element } from 'react-scroll'
 
@@ -21,11 +22,9 @@ const images = importAll(
   require.context("../../assets/skills", false, /\.(png|jpe?g|svg)$/)
 );
 
-const boxVariant = {
-  visible: { opacity: 1, scale: 2},
-  hidden: { opacity: 0, scale: 0}
-}
 const Home = () => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref);
    
   return (
     <>
@@ -37,10 +36,10 @@ const Home = () => {
 
       <main>
 
-      <Element name="about" className="element">
+      <Element name="about" className="element" ref={ref}>
         <section id="about" name="about">
           <SectionHeader title="About me" />
-          <p className="long-text">
+          <motion.p className="long-text">
 
           {/* I'm a front-end developer with a good background with computer in general. I started fixing and building computers at the age of 14. I started picking an interest in software developement and trying to understand how they were built. I started learning C++ and C# which gave me a very good understanding of the basics of programming. During my teenage years, I played around learning different programming languages and making little games for fun and it soon became a passion. 
 Unfortunately, I never thought It would become a job since I had difficulty in school and I lived in a small town in Abitibi-Temiscamingue where there were a lack of opportunity in this field. I left school to complete a DEP in Ore Extraction to work in the mining industry. After working for 2 years, I felt like I was not loving my job depsite of the good salary. I started to look for any programs about programming offered remotely.
@@ -60,7 +59,7 @@ I now have my DES and my AEC, ready to push  forwards and learn new technologies
             limited, I learned by myself Html/Css/Javascript without any
             "background" in web development. I built a portfolio and I was
             selected! At that time, I discovered my passion for web development.
-          </p>
+          </motion.p>
         </section>
       </Element>
 
