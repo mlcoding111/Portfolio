@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../Reusable";
+import SectionHeader from "../Reusable/SectionHeader";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";

@@ -3,6 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import NavBar from "../Navbar";
 import About from "../../components/About";
+import Divider from "../../components/Reusable/Divider";
 
 import { Element } from "react-scroll";
 import Skills from "../../components/Skills";
@@ -18,7 +19,9 @@ const Home = () => {
 
       <NavBar />
       <Header />
-
+      
+      {/* <Divider /> */}
+      
       <main>
         <Element name="about" className="element">
           <About />

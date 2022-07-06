@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../Reusable";
+import SectionHeader from "../Reusable/SectionHeader";
 import Projects from "../Projects";
 
 function Works() {
