@@ -13,17 +13,31 @@ export default function Header() {
   const scrollToTop = () =>{
     scroll.scrollToTop();
   }
-  const list = { hidden: { opacity: 0 } }
-const item = { hidden: { x: -10, opacity: 0 } }
 
   return (
     <header>
       <motion.div 
+        initial={{ opacity: 0, x: 1000 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: .4,
+          x: { type: "spring", stiffness: 100 },
+          default: { duration: .5 },
+        }}
         className="hero-img">
         <img src={me} height="280" id="avatar" />
       </motion.div>
       
-      <div className="hero-description">
+      <motion.div 
+        initial={{ opacity: 0, x: 1000 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: 0.2,
+          x: { type: "spring", stiffness: 50 },
+          default: { duration: 1 },
+        }}
+        viewport={{ once: true }}
+        className="hero-description">
         <h5>Hi, my name is</h5>
         <h1 id="name-h">Michael Lacroix.</h1>
         <h2 id="what">I build and design websites.</h2>
@@ -55,7 +69,7 @@ const item = { hidden: { x: -10, opacity: 0 } }
             Resume
           </motion.button>
         </div>
-      </div>
+      </motion.div>
     </header>
   )
 }
