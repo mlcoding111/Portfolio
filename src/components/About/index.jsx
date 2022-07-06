@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../Reusable/SectionHeader";
+import SectionHeader from "../Reusable";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -10,7 +10,7 @@ function About() {
 
     const boxVariant = {
         visible: { opacity: 1, scale: 1, x: 0, transition: { duration: .5 } },
-        hidden: { opacity: 0, scale: 0, x: 500 },
+        hidden: { opacity: 0, scale: 0, x: -50 },
     }
 
     React.useEffect(() => {
