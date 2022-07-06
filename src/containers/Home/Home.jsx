@@ -2,14 +2,16 @@ import React from "react";
 import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import NavBar from "../Navbar/Navbar.jsx";
-import SectionHeader from "../Reusable/SectionHeader.jsx";
-import Projects from '../Projects/ProjectsCardsList'
+import SectionHeader from "../../components/Reusable/SectionHeader.jsx";
+import Projects from '../../components/Projects/ProjectsCardsList'
 
 
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { Element } from 'react-scroll'
-import About from "../About/about.jsx";
+import About from "../../components/About/about.jsx";
+
+
 
 function importAll(r) {
   let images = {};
@@ -24,12 +26,22 @@ const images = importAll(
 );
 
 const Home = () => {
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
-   
+  const boxVariant = {
+      visible: { opacity: 1, scale: 1, x: 0, transition: { duration: .5 } },
+      hidden: { opacity: 0, scale: 0, x: 500 },
+  }
+
+  React.useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      }else{
+          control.start("hidden")
+      }
+  }, [control, inView]);
+
   return (
     <>
       <div id="top-message" >
