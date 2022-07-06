@@ -2,12 +2,8 @@ import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import NavBar from "../Navbar";
-import SectionHeader from "../../components/Reusable";
-import Projects from "../../components/Projects";
 import About from "../../components/About";
 
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { Element } from "react-scroll";
 import Skills from "../../components/Skills";
 import Contact from "../../components/Contact";
@@ -17,7 +13,7 @@ const Home = () => {
   return (
     <>
       <div id="top-message">
-        <p>In construction..</p>
+        <p></p>
       </div>
 
       <NavBar />
