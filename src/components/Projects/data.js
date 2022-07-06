@@ -1,14 +1,14 @@
 export const data = [
-    
     {
-        title: "First projects",
+        title: "MAISON",
         type: "Personal",
-        src: require("../../assets/projects/landing.png"),
-        github: "https://github.com/mlcoding111/Personal_Projects",
-        website: "https://mlcoding111.github.io/Personal_Projects/PortFolio/index.html",
-        technologies: ['React', 'Css'],
-        icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/css3.svg"), require("../../assets/skills/javascript.svg")]
-    },
+        src: require("../../assets/projects/maison.jpg"),
+        github: "https://github.com/mlcoding111/Maison-OnePager",
+        website: "https://mlcoding111.github.io/Maison-OnePager/",
+        technologies: ['Html', 'Scss', 'Css'],
+        icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/sass.svg")]
+    },    
+
     {
         title: "MOVIE APP",
         type: "Personal",
@@ -17,6 +17,15 @@ export const data = [
         website: "https://mlcoding111.github.io/modern-movie/",
         technologies: ['React', 'TypeScript', 'Styled Components'],
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/typescript.svg"), require("../../assets/skills/styledComponents.svg")]
+    },
+    {
+        title: "DPL",
+        type: "Freelance",
+        src: require("../../assets/projects/dpl.png"),
+        github: "https://github.com/mlcoding111/dpl-rework",
+        website: "https://decontamination-pl.ca/",
+        technologies: ['React', 'Css'],
+        icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/bootstrap.svg"), require("../../assets/skills/sass.svg"), require("../../assets/skills/nextJs.svg")]
     },
     {
         title: "WORDS BEATER",
@@ -28,13 +37,13 @@ export const data = [
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/typescript.svg"), require("../../assets/skills/styledComponents.svg")]
     },  
     {
-        title: "DPL",
-        type: "Freelance",
-        src: require("../../assets/projects/dpl.png"),
-        github: "https://github.com/mlcoding111/dpl-rework",
-        website: "https://decontamination-pl.ca/",
+        title: "First projects",
+        type: "Personal",
+        src: require("../../assets/projects/landing.png"),
+        github: "https://github.com/mlcoding111/Personal_Projects",
+        website: "https://mlcoding111.github.io/Personal_Projects/PortFolio/index.html",
         technologies: ['React', 'Css'],
-        icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/bootstrap.svg"), require("../../assets/skills/sass.svg"), require("../../assets/skills/nextJs.svg")]
+        icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/css3.svg"), require("../../assets/skills/javascript.svg")]
     },
     {
         title: "LADEKO",
@@ -53,15 +62,6 @@ export const data = [
         website: "https://github.com/mlcoding111/PGS-GESTION",
         technologies: ['React', 'Scss', 'Css'],
         icons: [require("../../assets/skills/react.svg"), require("../../assets/skills/mongodb.svg"), require("../../assets/skills/nodejs.svg"), require("../../assets/skills/materialui.svg")]
-    },
-    {
-        title: "MAISON",
-        type: "Personal",
-        src: require("../../assets/projects/maison.jpg"),
-        github: "https://github.com/mlcoding111/Maison-OnePager",
-        website: "https://mlcoding111.github.io/Maison-OnePager/",
-        technologies: ['Html', 'Scss', 'Css'],
-        icons: [require("../../assets/skills/html5.svg"), require("../../assets/skills/sass.svg")]
     },
     {
         title: "PLAN A",
