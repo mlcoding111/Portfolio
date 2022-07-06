@@ -2,7 +2,7 @@ import React from 'react'
 import me from '../../assets/me.jpg'
 import * as Scroll from 'react-scroll'
 import { Link } from 'react-scroll'
-
+import { motion } from 'framer-motion'
 export default function Header() {
   var scroll    = Scroll.animateScroll;
 
@@ -13,12 +13,16 @@ export default function Header() {
   const scrollToTop = () =>{
     scroll.scrollToTop();
   }
+  const list = { hidden: { opacity: 0 } }
+const item = { hidden: { x: -10, opacity: 0 } }
+
   return (
     <header>
-      <div className="hero-img">
+      <motion.div 
+        className="hero-img">
         <img src={me} height="280" id="avatar" />
-      </div>
-
+      </motion.div>
+      
       <div className="hero-description">
         <h5>Hi, my name is</h5>
         <h1 id="name-h">Michael Lacroix.</h1>
@@ -33,8 +37,23 @@ export default function Header() {
         </p>
 
         <div className="hero-btn-wrapper">
-        <button id="work-btn" className="btn" ><Link to="works" spy={true} smooth={true} onClick={scrollTo('works')} offset={-100}>Checkout my work!</Link></button>
-          <button id="resume-btn" className="btn" onClick={() => window.open("https://docs.google.com/document/d/1FJnO_tW-DfhVMMY9SW9KY2nLflMWG5iBihob_w-oRWs/edit?usp=sharing", "_blank")}>Resume</button>
+        <motion.button 
+            id="work-btn" 
+            className="btn"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+        >
+          <Link to="works" spy={true} smooth={true} onClick={scrollTo('works')} offset={-100}>Checkout my work!</Link>
+        </motion.button>
+          <motion.button 
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              id="resume-btn" 
+              className="btn" 
+              onClick={() => window.open("https://docs.google.com/document/d/1FJnO_tW-DfhVMMY9SW9KY2nLflMWG5iBihob_w-oRWs/edit?usp=sharing", "_blank")}
+          >                
+            Resume
+          </motion.button>
         </div>
       </div>
     </header>

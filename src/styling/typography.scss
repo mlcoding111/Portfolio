@@ -18,6 +18,10 @@ html{
 body{
     background: linear-gradient(to left top, var(--body-top-left-gradient) 0%, var(--body-bottom-right-gradient) 100% /*top-left color*/), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
     overflow-x: hidden;
+
+}
+header{
+    background-attachment: fixed !important;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -95,31 +99,15 @@ h2 svg{
     display: inline-block;
     position: relative;
     border-radius: 2px;
-    padding: .7rem 1rem;
+    padding: .9rem 1.1rem;
     font-weight: bold;
-    border: 3px solid var(--primary-darker);
+    border: 2px solid var(--primary);
     font-size: .9rem;
     margin: 0 .5rem;
     background: transparent;
     color: white;
 }
 
-#work-btn{
-    background: transparent;
-}
-
-#work-btn:hover,
-.btn:hover{
-    background: var(--primary);
-    color: white !important;
-    border: solid 3px var(--primary);
-}
-
-#resume-btn{
-    background: var(--primary);
-    color: white;
-    border: 3px solid var(--primary);
-}
 
 .long-text{
     word-spacing: 1px;
